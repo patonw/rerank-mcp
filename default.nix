@@ -22,7 +22,7 @@ in
       py.pkgs.venvShellHook
     ];
 
-    # LD_LIBRARY_PATH = lib.makeLibraryPath [stdenv.cc.cc.lib ffmpeg];
+    LD_LIBRARY_PATH = lib.makeLibraryPath [stdenv.cc.cc.lib];
     postVenvCreation = ''
       unset SOURCE_DATE_EPOCH
       #pip install -r requirements.txt
