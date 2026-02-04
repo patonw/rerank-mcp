@@ -1,0 +1,17 @@
+[project]
+name = "rerank-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "patonw", email = "4967614-patonw@users.noreply.gitlab.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["uv_build>=0.9.28,<0.10.0"]
+build-backend = "uv_build"
+
+[project.scripts]
+rerank-mcp = "rerank_mcp.main:main"
